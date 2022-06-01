@@ -66,77 +66,22 @@ const suspectsArray = [
 
 // Rooms Array
 
-const roomsArray = [
-  { name: 'Dining Room' },
-  { name: 'Conservatory' },
-  { name: 'Kitchen' },
-  { name: 'Study' },
-  { name: 'Library' },
-  { name: 'Lounge' },
-  { name: 'Billiard Room' },
-  { name: 'Ballroom' },
-  { name: 'Hall' },
-  { name: 'Spa' },
-  { name: 'Living Room' },
-  { name: 'Observatory' },
-  { name: 'Theater' },
-  { name: 'Guest House' },
-  { name: 'Patio' }
-];
+const roomsArray = [];
 
 // Weapons Array
 
-const weaponsArray = [
-  {
-    name: 'rope',
-    weight: 10
-  },
-  {
-    name: 'knife',
-    weight: 8
-  },
-  {
-    name: 'candlestick',
-    weight: 2
-  },
-  { name: 'dumbbell', weight: 30 },
-  {
-    name: 'poison',
-    weight: 2
-  },
-  { name: 'axe', weight: 15 },
-  {
-    name: 'bat',
-    weight: 13
-  },
-  { name: 'trophy', weight: 25 },
-  {
-    name: 'pistol',
-    weight: 20
-  }
-];
+const weaponsArray = [];
 
 // ITERATION 2
 
-function selectRandom(array) {
-  const randomNumber = array[Math.floor(Math.random() * array.length)];
-  return randomNumber;
-}
+function selectRandom() {}
 
-function pickMystery() {
-  const randomMistery = {};
-  randomMistery.suspect = selectRandom(suspectsArray);
-  randomMistery.weapon = selectRandom(weaponsArray);
-  randomMistery.room = selectRandom(roomsArray);
-  return randomMistery;
-}
+function pickMystery() {}
 
 // ITERATION 3
 
-function revealMystery(object) {
-  return `${object.suspect.firstName} ${object.suspect.lastName} killed Mr. Boddy using the ${object.weapon.name} in the ${object.room.name}!`;
-}
-revealMystery(pickMystery());
+function revealMystery() {}
+
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
 if (typeof module !== 'undefined') {

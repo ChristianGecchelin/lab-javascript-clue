@@ -123,20 +123,12 @@ function selectRandom(array) {
   return randomNumber;
 }
 
-function pickMystery() {
-  const randomMistery = {};
-  randomMistery.suspect = selectRandom(suspectsArray);
-  randomMistery.weapon = selectRandom(weaponsArray);
-  randomMistery.room = selectRandom(roomsArray);
-  return randomMistery;
-}
+function pickMystery() {}
 
 // ITERATION 3
 
-function revealMystery(object) {
-  return `${object.suspect.firstName} ${object.suspect.lastName} killed Mr. Boddy using the ${object.weapon.name} in the ${object.room.name}!`;
-}
-revealMystery(pickMystery());
+function revealMystery() {}
+
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
 if (typeof module !== 'undefined') {

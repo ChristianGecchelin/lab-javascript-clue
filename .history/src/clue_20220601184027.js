@@ -134,9 +134,10 @@ function pickMystery() {
 // ITERATION 3
 
 function revealMystery(object) {
-  return `${object.suspect.firstName} ${object.suspect.lastName} killed Mr. Boddy using the ${object.weapon.name} in the ${object.room.name}!`;
+  randomMistery();
+  return `${object.suspect.firstName} ${object.weapon.lastName} killed Mr. Boddy using the ${object.weapon.name} in the ${object.room.name}!`;
 }
-revealMystery(pickMystery());
+
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
 if (typeof module !== 'undefined') {
